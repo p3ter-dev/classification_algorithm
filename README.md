@@ -1,31 +1,114 @@
-# Sentiment Analysis Classification Algorithm
+# Sentiment Analysis on IMDB Movie Reviews
 
-This project implements a sentiment analysis classifier using Logistic Regression on IMDB movie reviews from the NLTK dataset.
+This project implements **sentiment analysis classifiers** using **Logistic Regression** and **Support Vector Machines (LinearSVC)** on the IMDB movie reviews dataset provided by **NLTK**.  
+The goal is to classify movie reviews as **Positive** or **Negative** using classical machine learning techniques and TF-IDF feature extraction.
+
+---
+
+## Overview
+
+- Dataset: IMDB Movie Reviews (NLTK)
+- Task: Binary sentiment classification
+- Models:
+  - Logistic Regression
+  - Support Vector Machine (LinearSVC)
+- Feature Representation: TF-IDF (5000 features)
+- Evaluation:
+  - Classification Report (Precision, Recall, F1-score)
+  - Confusion Matrix Visualization
+- Extra:
+  - Interactive sentiment prediction on custom input text
+
+---
 
 ## Features
 
-- **Preprocessing**: Removes handles and URLs, tokenizes, converts to lowercase, removes stop words, and applies stemming.
-- **Classification**: Uses Logistic Regression with TF-IDF vectorization.
-- **Visualization**: Plots a confusion matrix for the classification results.
+### Text Preprocessing
+Each review undergoes the following preprocessing steps:
 
-## Requirements
+1. Removal of:
+   - Twitter-style handles (`@username`)
+   - URLs
+2. Tokenization using NLTK
+3. Conversion to lowercase
+4. Stop-word removal (English)
+5. Removal of non-alphabetic tokens
+6. Stemming using **Porter Stemmer**
 
-Install the required packages using:
+---
 
-```
-pip install -r requirements.txt
-```
+### Feature Extraction (TF-IDF)
 
-## Usage
+- Uses `TfidfVectorizer`
+- Maximum features: **5000**
+- Output:
+  - Sparse, high-dimensional feature vectors
+  - Suitable for linear models like Logistic Regression and SVM
 
-Run the main script:
+---
 
-```
-python main.py
-```
+### Classification Models
 
-This will train the model, evaluate it on the test set, and display the confusion matrix plot.
+#### Logistic Regression
+- Efficient linear classifier for text data
+- Outputs:
+  - Class predictions
+  - Class probabilities (`predict_proba`)
+- Ideal for probabilistic sentiment interpretation
+
+#### Support Vector Machine (LinearSVC)
+- Optimized for large, sparse datasets
+- Uses a **linear kernel**
+- Outputs:
+  - Class predictions
+  - Decision score (distance from hyperplane)
+- Faster and memory-efficient for text classification
+
+---
+
+## Evaluation & Visualization
+
+For both models:
+
+- **Classification Report**
+  - Precision
+  - Recall
+  - F1-score
+  - Accuracy
+- **Confusion Matrix**
+  - Saved as PNG images:
+    - `confusion_matrix.png` (Logistic Regression)
+    - `svm_confusion_matrix.png` (SVM)
+
+Matplotlib is configured with a non-interactive backend (`Agg`) to ensure compatibility in headless environments.
+
+---
 
 ## Dataset
 
-The dataset used is the IMDB movie reviews from NLTK, which contains positive and negative movie reviews.
+### IMDB Movie Reviews Dataset
+
+- *** Provided by NLTK ***
+
+    - 2000 total reviews:
+        - 1000 Positive
+        - 1000 Negative
+
+---
+
+## Usage
+**Logistic Regression Model**
+*** python main.py ***
+
+**Support Vector Machine Model**
+*** python SVM.py ***
+
+---
+
+## Interactive Testing
+
+Both models allow sentiment prediction on **custom user input**.
+
+Example input:
+```text
+"This is a ridiculously bright movie. The plot was terrible and I was sad until the ending!"
