@@ -14,6 +14,12 @@ The goal is to classify movie reviews as **Positive** or **Negative** using clas
 | Hailemichael Lijalem | ATE/1051/14  |
 | Beamlak Tibebu       | ATE/3624/14  |
 
+---
+
+<h2><a href="https://docs.google.com/document/d/10QqJwqLlKasb8asZ-XW5VTo2OHX93pMtvhpDG3S4c20/edit?tab=t.0">Documentation for the project</a><h2>
+
+---
+
 ## Overview
 
 - Dataset: IMDB Movie Reviews (NLTK)
