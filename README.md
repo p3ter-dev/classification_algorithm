@@ -88,7 +88,7 @@ Matplotlib is configured with a non-interactive backend (`Agg`) to ensure compat
 
 ### IMDB Movie Reviews Dataset
 
-- *** Provided by NLTK ***
+- **Provided by NLTK**
 
     - 2000 total reviews:
         - 1000 Positive
@@ -98,10 +98,10 @@ Matplotlib is configured with a non-interactive backend (`Agg`) to ensure compat
 
 ## Usage
 **Logistic Regression Model** <br>
-*** python main.py ***
+**python main.py**
 
 **Support Vector Machine Model** <br>
-*** python SVM.py ***
+**python SVM.py**
 
 ---
 
