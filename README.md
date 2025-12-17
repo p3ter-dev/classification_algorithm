@@ -5,6 +5,15 @@ The goal is to classify movie reviews as **Positive** or **Negative** using clas
 
 ---
 
+### Group Members
+
+| Name                 | ID           |
+|----------------------|--------------|
+| Peter Kinfe          | ATE/7749/15  |
+| Abdisa Alemu         | ATE/2603/14  |
+| Hailemichael Lijalem | ATE/1051/14  |
+| Beamlak Tibebu       | ATE/3624/14  |
+
 ## Overview
 
 - Dataset: IMDB Movie Reviews (NLTK)
