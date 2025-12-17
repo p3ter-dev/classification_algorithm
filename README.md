@@ -98,10 +98,10 @@ Matplotlib is configured with a non-interactive backend (`Agg`) to ensure compat
 
 ## Usage
 **Logistic Regression Model** <br>
-**python main.py**
+    - **python main.py**
 
 **Support Vector Machine Model** <br>
-**python SVM.py**
+    - **python SVM.py**
 
 ---
 
