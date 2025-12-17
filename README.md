@@ -5,7 +5,7 @@ The goal is to classify movie reviews as **Positive** or **Negative** using clas
 
 ---
 
-### Group Members
+### Group Members and Documentation
 
 | Name                 | ID           |
 |----------------------|--------------|
